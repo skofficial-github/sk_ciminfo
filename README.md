@@ -38,7 +38,7 @@
 
 ## 🧑‍💻 Author
 **SK Official**
-For support or suggestions, feel free to contact the developer via Discord or GitHub.
+For support or suggestions, feel free to contact the developer via [Discord](https://discord.gg/Sm9w8Qpbua) or [GitHub](https://github.com/skofficial-github).
 
 ## 📜 License
 This project is licensed under the Apache License 2.0 — you are free to use, modify, and distribute the code, as long as proper credit is given and the license terms are followed.
