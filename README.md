@@ -13,6 +13,7 @@
 - Automatically reloads markers when a player joins the server.
 - NUI image viewer with `K` key support for attached images.
 - Chat suggestions for available commands.
+- All markers are automatically cleared when the server restarts.
 
 ## 🧾 Commands
 `/cim <message> [image_url]`  Places a marker with a message and optional image URL 
