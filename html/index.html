@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            border: 5px solid white;
+            box-shadow: 0 0 20px #000;
+        }
+    </style>
+</head>
+<body>
+    <img id="markerImg" src="" alt="Marker Image">
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data.type === "showImage") {
+                document.getElementById('markerImg').src = event.data.url;
+                document.body.style.display = "flex";
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                document.body.style.display = "none";
+                fetch(`https://${GetParentResourceName()}/close`);
+            }
+        });
+    </script>
+</body>
+</html>
